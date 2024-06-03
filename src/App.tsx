@@ -1,34 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import myPic from './assets/my_pic.png'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <main className='grid grid-cols-2 place-items-center gap-2'>
+      <section className='max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
+        <figure className='flex flex-col items-center'>
+          <img src={myPic} alt='' className='rounded-full w-9/12' />
+          <figcaption>
+            <h1 className=' my-2 text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white'>
+              I'm Wladimir Rocha
+            </h1>
+            <p className='mb-3 text-2xl text-center font-normal text-gray-700 dark:text-gray-400'>I'm 30 years old</p>
+          </figcaption>
+        </figure>
+      </section>
+    
+    </main>
   )
 }
 
