@@ -1,0 +1,56 @@
+.container-heart {
+  font-size: 1.2em;
+  font-size: 1.2em;
+  display: grid;
+  /* min-height: 100vh; */
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  /* top: 5%; */
+  /* left: 50%; */
+}
+
+.heart {
+  --size: 70px;
+  --color: red;
+  transform: rotate(20deg);
+  animation: beat 1s infinite alternate ease-in-out, change-color 1s infinite ease-in-out;
+  position: fixed;
+}
+@keyframes beat {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+@keyframes change-color {
+ from{
+    --color: #ff0000;
+  }
+ to {
+    --color: #fc006d;
+  }
+}
+
+.heart,
+.heart::before,
+.heart::after {
+  width: var(--size);
+  height: var(--size);
+  background: var(--color);
+}
+.heart::before,
+.heart::after {
+  content: '';
+  display: block;
+  border-radius: 50%;
+}
+.heart::before {
+  margin-top: calc(var(--size) * -0.5);
+}
+.heart::after {
+  margin-top: calc(var(--size) * -0.5);
+  margin-left: calc(var(--size) * -0.5);
+}
