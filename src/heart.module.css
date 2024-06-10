@@ -15,7 +15,7 @@
   --color: red;
   transform: rotate(20deg);
   animation: beat 1s infinite alternate ease-in-out, change-color 1s infinite ease-in-out;
-  position: fixed;
+  position: relative;
 }
 @keyframes beat {
   0% {
