@@ -8,7 +8,7 @@
     transform: translateY(-50%);
   }
   60% {
-    transform: translateY(2%);
+    transform: translateY(2%) ;
   }
   100% {
     transform: translateY(0);
