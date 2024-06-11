@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react-swc'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/english-presentation/'
+  base: 'https://github.com/wldrocha/english-presentation/'
 })
