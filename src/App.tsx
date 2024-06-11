@@ -8,7 +8,6 @@ import pizzaPic from './assets/pizza_pic.png'
 import passionFruitPic from './assets/passion_fruit_pic.png'
 import stylesHeart from './heart.module.css'
 import stylesSports from './sports.module.css'
-import stylesParents from './parents.module.css'
 import stylesPet from './pet.module.css'
 import StyleFoodDrink from './food-drink.module.css'
 
