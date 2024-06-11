@@ -1,0 +1,23 @@
+.fade-in {
+  animation: fadeIn 4s infinite alternate ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-out {
+  animation: fadeOut 4s infinite alternate  ease-out forwards;
+}
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
