@@ -1,0 +1,33 @@
+.chess {
+  transform: translateY(-50%);
+  animation: chess-mve 0.7s infinite alternate ease-in-out;
+}
+
+@keyframes chess-mve {
+  0% {
+    transform: translateY(-50%);
+  }
+  60% {
+    transform: translateY(2%) ;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.baseball {
+  transform: scale(0.2) translateY(-100%);
+  animation: baseball-move 1s infinite alternate ease-in;
+}
+
+@keyframes baseball-move {
+  0% {
+    transform: scale(0.2) translateY(-100%) translateX(-100%) rotate(0.2turn);
+  }
+  60% {
+    transform: scale(0.7) translateY(-50%) translateX(-40%)  rotate(0.6turn);
+  }
+  100% {
+    transform: scale(0.8) translateY(40%) translateX(20%)  rotate(1turn);
+  }
+}
