@@ -1,0 +1,36 @@
+@keyframes imageChange {
+  from {
+    background-image: url('./assets/cat_pic.jpg');
+  }
+
+  to {
+    background-image: url('./assets/cat2_pic.jpg');
+  }
+}
+@keyframes jump-pet {
+  20% {
+    background-position-y: top;
+  }
+  80% {
+    background-position-y: -25px;
+  }
+}
+
+@keyframes rotate-pet {
+  from{
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.pet {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-image: url('./assets/cat_pic.jpg');
+  animation: rotate-pet 4s linear infinite, jump-pet 0.6s infinite alternate;
+  @apply rounded-full;
+}
