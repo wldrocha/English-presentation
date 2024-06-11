@@ -5,7 +5,7 @@
   /* min-height: 100vh; */
   justify-content: center;
   align-content: center;
-  position: absolute;
+  /* position: absolute; */
   /* top: 5%; */
   /* left: 50%; */
 }
@@ -13,16 +13,16 @@
 .heart {
   --size: 70px;
   --color: red;
-  transform: rotate(20deg);
+  transform: rotate(43deg);
   animation: beat 1s infinite alternate ease-in-out, change-color 1s infinite ease-in-out;
   position: relative;
 }
 @keyframes beat {
   0% {
-    transform: scale(0.3);
+    transform:rotate(43deg) scale(0.3);
   }
   100% {
-    transform: scale(1.2);
+    transform:rotate(43deg) scale(1);
   }
 }
 @keyframes change-color {
