@@ -14,7 +14,7 @@ import StyleFoodDrink from './food-drink.module.css'
 
 function App() {
   return (
-    <main className='h-full grid grid-cols-1 place-items-center gap-2 bg-blue-50 md:grid-cols-2 xl:grid-cols-3 dark:dark:bg-gray-900'>
+    <main className='min-h-dvh grid gap-2 grid-cols-1 place-items-center gap-2 bg-blue-50 md:grid-cols-2 xl:grid-cols-3 dark:dark:bg-gray-900'>
       <section className='w-9/12 h-96 p-6 bg-blue-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-evenly'>
         <figure className='flex flex-col items-center'>
           <img src={myPic} alt='' className='rounded-full w-9/12' />
@@ -34,7 +34,7 @@ function App() {
         <div className={stylesHeart['container-heart']}>
           <div className={stylesHeart.heart} />
         </div>
-        <h2 className=' my-2 text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white'>Alondra</h2>
+        {/* <h2 className=' my-2 text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white'>Alondra</h2> */}
       </section>
       <section className='w-9/12 h-96 p-6 bg-blue-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-evenly'>
         <div className='flex justify-center w-full'>
